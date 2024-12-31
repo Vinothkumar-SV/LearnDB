@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [LambaTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="MACTEST(failed)">
+    <parameter name="browser" value="Edge"/>
+    <parameter name="version" value="127.0"/>
+    <parameter name="platform" value="macOS Ventura"/>
+    <classes>
+      <class name="lambdaTestPlayground.TestScenario1">
+        <methods>
+          <include name="scenario1"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- lambdaTestPlayground.TestScenario1 -->
+    </classes>
+  </test> <!-- MACTEST(failed) -->
+  <test thread-count="5" parallel="tests" name="Microsoft Edge(failed)">
+    <parameter name="browser" value="Edge"/>
+    <parameter name="version" value="127.0"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="lambdaTestPlayground.TestScenario3">
+        <methods>
+          <include name="postCondition"/>
+          <include name="scenario3"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- lambdaTestPlayground.TestScenario3 -->
+      <class name="lambdaTestPlayground.TestScenario1">
+        <methods>
+          <include name="scenario1"/>
+          <include name="postCondition"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- lambdaTestPlayground.TestScenario1 -->
+    </classes>
+  </test> <!-- Microsoft Edge(failed) -->
+  <test thread-count="5" parallel="tests" name="Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="version" value="128.0"/>
+    <parameter name="platform" value="Windows 10"/>
+    <classes>
+      <class name="lambdaTestPlayground.TestScenario2">
+        <methods>
+          <include name="postCondition"/>
+          <include name="scenario2"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- lambdaTestPlayground.TestScenario2 -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [LambaTestSuite] -->

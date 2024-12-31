@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="LambaTestSuite" parallel="tests" >
+<!--1. Chrome + 128.0 + Windows 10
+2. Microsoft Edge + 127.0 + macOS Ventura
+3. Firefox 130.0 + Windows 11
+4. Internet Explorer + 11.0 + Windows 10-->
+  <test name="Chrome">
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="version" value="128.0"/>
+  <parameter name="platform" value="Windows 10"/>
+ <classes>
+      <class name="lambdaTestPlayground.TestScenario1"/>
+    <class name="lambdaTestPlayground.TestScenario2"/>
+    <class name="lambdaTestPlayground.TestScenario3"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test name="Microsoft Edge">
+  <parameter name="browser" value="Edge"/>
+  <parameter name="version" value="127.0"/>
+  <parameter name="platform" value="Windows 11"/>
+   <classes>
+      <class name="lambdaTestPlayground.TestScenario1"/>
+    <class name="lambdaTestPlayground.TestScenario2"/>
+    <class name="lambdaTestPlayground.TestScenario3"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="MACTEST">
+  <parameter name="browser" value="Edge"/>
+  <parameter name="version" value="127.0"/>
+  <parameter name="platform" value="macOS Ventura"/>
+  <classes>
+      <class name="lambdaTestPlayground.TestScenario1"/>
+    <class name="lambdaTestPlayground.TestScenario2"/>
+    <class name="lambdaTestPlayground.TestScenario3"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="FireFox">
+  <parameter name="browser" value="Firefox"/>
+  <parameter name="version" value="130.0"/>
+  <parameter name="platform" value="Windows 11"/>
+ <classes>
+      <class name="lambdaTestPlayground.TestScenario1"/>
+    <class name="lambdaTestPlayground.TestScenario2"/>
+    <class name="lambdaTestPlayground.TestScenario3"/>
+    </classes>
+  </test>
+  
+    <test name="InternetExplorer">
+  <parameter name="browser" value="InternetExplorer"/>
+  <parameter name="version" value="11"/>
+  <parameter name="platform" value="Windows 10"/>
+  <classes>
+      <class name="lambdaTestPlayground.TestScenario1"/>
+    <class name="lambdaTestPlayground.TestScenario2"/>
+    <class name="lambdaTestPlayground.TestScenario3"/>
+    </classes>
+  </test>
+
+</suite>

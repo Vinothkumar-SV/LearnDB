@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="11" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-28T18:43:43 IST" name="LambaTestSuite" finished-at="2024-12-28T18:48:28 IST" duration-ms="285655">
+    <groups>
+    </groups>
+    <test started-at="2024-12-28T18:43:43 IST" name="MACTEST" finished-at="2024-12-28T18:44:16 IST" duration-ms="33377">
+      <class name="lambdaTestPlayground.TestScenario1">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario1@4c163e3]" started-at="2024-12-28T18:43:43 IST" name="preCondition" finished-at="2024-12-28T18:43:53 IST" duration-ms="10698" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[macOS Ventura]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[127.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario1()[pri:0, instance:lambdaTestPlayground.TestScenario1@4c163e3]" started-at="2024-12-28T18:43:53 IST" name="scenario1" finished-at="2024-12-28T18:43:54 IST" duration-ms="592" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: MicrosoftEdge=127.0.2651.74)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d6795b295fa6858ac28920894097b52f, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=f.1B3A7961D32E5154CC10F83AE58D08CE.d.A2B0EFDBB5D29271F52FC9D9A8D530C3.e.82}]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.74, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50403}, msedge: {msedgedriverVersion: 127.0.2651.74 (dbf5b0aa014c..., userDataDir: /var/folders/d_/5qrcqy5d22b...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6795b295fa6858ac28920894097b52f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: MicrosoftEdge=127.0.2651.74)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d6795b295fa6858ac28920894097b52f, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=f.1B3A7961D32E5154CC10F83AE58D08CE.d.A2B0EFDBB5D29271F52FC9D9A8D530C3.e.82}]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.74, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50403}, msedge: {msedgedriverVersion: 127.0.2651.74 (dbf5b0aa014c..., userDataDir: /var/folders/d_/5qrcqy5d22b...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6795b295fa6858ac28920894097b52f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+at lambdaTestPlayground.TestScenario1.scenario1(TestScenario1.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario1@4c163e3]" started-at="2024-12-28T18:43:54 IST" name="postCondition" finished-at="2024-12-28T18:43:54 IST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario1 -->
+      <class name="lambdaTestPlayground.TestScenario2">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario2@4a8355dd]" started-at="2024-12-28T18:43:54 IST" name="preCondition" finished-at="2024-12-28T18:44:02 IST" duration-ms="7891" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[macOS Ventura]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[127.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario2()[pri:0, instance:lambdaTestPlayground.TestScenario2@4a8355dd]" started-at="2024-12-28T18:44:02 IST" name="scenario2" finished-at="2024-12-28T18:44:04 IST" duration-ms="1445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario2@4a8355dd]" started-at="2024-12-28T18:44:04 IST" name="postCondition" finished-at="2024-12-28T18:44:04 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario2 -->
+      <class name="lambdaTestPlayground.TestScenario3">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario3@4d0d9fe7]" started-at="2024-12-28T18:44:04 IST" name="preCondition" finished-at="2024-12-28T18:44:12 IST" duration-ms="8632" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[macOS Ventura]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[127.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario3()[pri:0, instance:lambdaTestPlayground.TestScenario3@4d0d9fe7]" started-at="2024-12-28T18:44:12 IST" name="scenario3" finished-at="2024-12-28T18:44:16 IST" duration-ms="3408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario3@4d0d9fe7]" started-at="2024-12-28T18:44:16 IST" name="postCondition" finished-at="2024-12-28T18:44:16 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario3 -->
+    </test> <!-- MACTEST -->
+    <test started-at="2024-12-28T18:43:43 IST" name="Microsoft Edge" finished-at="2024-12-28T18:46:49 IST" duration-ms="186117">
+      <class name="lambdaTestPlayground.TestScenario1">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario1@25be7b63]" started-at="2024-12-28T18:43:43 IST" name="preCondition" finished-at="2024-12-28T18:43:54 IST" duration-ms="11181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[127.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario1()[pri:0, instance:lambdaTestPlayground.TestScenario1@25be7b63]" started-at="2024-12-28T18:43:54 IST" name="scenario1" finished-at="2024-12-28T18:43:54 IST" duration-ms="196" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to find the session info for particular sessionId d6795b295fa6858ac28920894097b52f, maybe session has quit already or timed out.
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d6795b295fa6858ac28920894097b52f, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=f.1B3A7961D32E5154CC10F83AE58D08CE.d.405855FCBEFAB4A7FF086324577F90E2.e.99}]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.74, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50403}, msedge: {msedgedriverVersion: 127.0.2651.74 (dbf5b0aa014c..., userDataDir: /var/folders/d_/5qrcqy5d22b...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6795b295fa6858ac28920894097b52f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId d6795b295fa6858ac28920894097b52f, maybe session has quit already or timed out.
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [d6795b295fa6858ac28920894097b52f, executeScript {script=arguments[0].scrollIntoView(true);, args=[{element-6066-11e4-a52e-4f735466cecf=f.1B3A7961D32E5154CC10F83AE58D08CE.d.405855FCBEFAB4A7FF086324577F90E2.e.99}]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 127.0.2651.74, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:50403}, msedge: {msedgedriverVersion: 127.0.2651.74 (dbf5b0aa014c..., userDataDir: /var/folders/d_/5qrcqy5d22b...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6795b295fa6858ac28920894097b52f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+at lambdaTestPlayground.TestScenario1.scenario1(TestScenario1.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario1@25be7b63]" started-at="2024-12-28T18:43:54 IST" name="postCondition" finished-at="2024-12-28T18:43:54 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario1 -->
+      <class name="lambdaTestPlayground.TestScenario2">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario2@28dcca0c]" started-at="2024-12-28T18:43:54 IST" name="preCondition" finished-at="2024-12-28T18:44:25 IST" duration-ms="30891" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[127.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario2()[pri:0, instance:lambdaTestPlayground.TestScenario2@28dcca0c]" started-at="2024-12-28T18:44:25 IST" name="scenario2" finished-at="2024-12-28T18:44:31 IST" duration-ms="5878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario2@28dcca0c]" started-at="2024-12-28T18:44:31 IST" name="postCondition" finished-at="2024-12-28T18:44:52 IST" duration-ms="21629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario2 -->
+      <class name="lambdaTestPlayground.TestScenario3">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario3@45d84a20]" started-at="2024-12-28T18:44:52 IST" name="preCondition" finished-at="2024-12-28T18:46:05 IST" duration-ms="72759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[127.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario3()[pri:0, instance:lambdaTestPlayground.TestScenario3@45d84a20]" started-at="2024-12-28T18:46:05 IST" name="scenario3" finished-at="2024-12-28T18:46:48 IST" duration-ms="43214" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#inputAddress1"}
+  (Session info: chrome=128.0.6613.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [518474d59df3e8354262211db57cf074, findElement {using=id, value=inputAddress1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.85, chrome: {chromedriverVersion: 128.0.6613.18 (7d504c2c60ba..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 518474d59df3e8354262211db57cf074]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#inputAddress1"}
+  (Session info: chrome=128.0.6613.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [518474d59df3e8354262211db57cf074, findElement {using=id, value=inputAddress1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.85, chrome: {chromedriverVersion: 128.0.6613.18 (7d504c2c60ba..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 518474d59df3e8354262211db57cf074
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at lambdaTestPlayground.TestScenario3.scenario3(TestScenario3.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario3@45d84a20]" started-at="2024-12-28T18:46:48 IST" name="postCondition" finished-at="2024-12-28T18:46:49 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario3 -->
+    </test> <!-- Microsoft Edge -->
+    <test started-at="2024-12-28T18:43:43 IST" name="InternetExplorer" finished-at="2024-12-28T18:47:44 IST" duration-ms="241382">
+      <class name="lambdaTestPlayground.TestScenario1">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario1@65987993]" started-at="2024-12-28T18:43:43 IST" name="preCondition" finished-at="2024-12-28T18:45:34 IST" duration-ms="111437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InternetExplorer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario1()[pri:0, instance:lambdaTestPlayground.TestScenario1@65987993]" started-at="2024-12-28T18:45:34 IST" name="scenario1" finished-at="2024-12-28T18:45:38 IST" duration-ms="4275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario1@65987993]" started-at="2024-12-28T18:45:38 IST" name="postCondition" finished-at="2024-12-28T18:45:39 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario1 -->
+      <class name="lambdaTestPlayground.TestScenario2">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario2@71075444]" started-at="2024-12-28T18:45:39 IST" name="preCondition" finished-at="2024-12-28T18:47:05 IST" duration-ms="86048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InternetExplorer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario2()[pri:0, instance:lambdaTestPlayground.TestScenario2@71075444]" started-at="2024-12-28T18:47:05 IST" name="scenario2" finished-at="2024-12-28T18:47:08 IST" duration-ms="2843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario2@71075444]" started-at="2024-12-28T18:47:08 IST" name="postCondition" finished-at="2024-12-28T18:47:08 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario2 -->
+      <class name="lambdaTestPlayground.TestScenario3">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario3@4f32a3ad]" started-at="2024-12-28T18:47:08 IST" name="preCondition" finished-at="2024-12-28T18:47:33 IST" duration-ms="25714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[InternetExplorer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario3()[pri:0, instance:lambdaTestPlayground.TestScenario3@4f32a3ad]" started-at="2024-12-28T18:47:33 IST" name="scenario3" finished-at="2024-12-28T18:47:44 IST" duration-ms="10550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario3@4f32a3ad]" started-at="2024-12-28T18:47:44 IST" name="postCondition" finished-at="2024-12-28T18:47:44 IST" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario3 -->
+    </test> <!-- InternetExplorer -->
+    <test started-at="2024-12-28T18:43:43 IST" name="FireFox" finished-at="2024-12-28T18:48:11 IST" duration-ms="268819">
+      <class name="lambdaTestPlayground.TestScenario1">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario1@72bc6553]" started-at="2024-12-28T18:43:43 IST" name="preCondition" finished-at="2024-12-28T18:45:08 IST" duration-ms="85098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[130.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario1()[pri:0, instance:lambdaTestPlayground.TestScenario1@72bc6553]" started-at="2024-12-28T18:45:08 IST" name="scenario1" finished-at="2024-12-28T18:45:16 IST" duration-ms="8530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario1@72bc6553]" started-at="2024-12-28T18:45:16 IST" name="postCondition" finished-at="2024-12-28T18:45:19 IST" duration-ms="2489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario1 -->
+      <class name="lambdaTestPlayground.TestScenario2">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario2@66982506]" started-at="2024-12-28T18:45:19 IST" name="preCondition" finished-at="2024-12-28T18:47:17 IST" duration-ms="117738" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[130.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario2()[pri:0, instance:lambdaTestPlayground.TestScenario2@66982506]" started-at="2024-12-28T18:47:17 IST" name="scenario2" finished-at="2024-12-28T18:47:24 IST" duration-ms="7202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario2@66982506]" started-at="2024-12-28T18:47:24 IST" name="postCondition" finished-at="2024-12-28T18:47:26 IST" duration-ms="2046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario2 -->
+      <class name="lambdaTestPlayground.TestScenario3">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario3@70cf32e3]" started-at="2024-12-28T18:47:26 IST" name="preCondition" finished-at="2024-12-28T18:47:56 IST" duration-ms="30513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[130.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario3()[pri:0, instance:lambdaTestPlayground.TestScenario3@70cf32e3]" started-at="2024-12-28T18:47:56 IST" name="scenario3" finished-at="2024-12-28T18:48:10 IST" duration-ms="13317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario3@70cf32e3]" started-at="2024-12-28T18:48:10 IST" name="postCondition" finished-at="2024-12-28T18:48:11 IST" duration-ms="1758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario3 -->
+    </test> <!-- FireFox -->
+    <test started-at="2024-12-28T18:43:43 IST" name="Chrome" finished-at="2024-12-28T18:48:28 IST" duration-ms="285655">
+      <class name="lambdaTestPlayground.TestScenario1">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario1@2cf3d63b]" started-at="2024-12-28T18:43:43 IST" name="preCondition" finished-at="2024-12-28T18:45:54 IST" duration-ms="131211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[128.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario1()[pri:0, instance:lambdaTestPlayground.TestScenario1@2cf3d63b]" started-at="2024-12-28T18:45:54 IST" name="scenario1" finished-at="2024-12-28T18:45:56 IST" duration-ms="2266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario1@2cf3d63b]" started-at="2024-12-28T18:45:56 IST" name="postCondition" finished-at="2024-12-28T18:45:56 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario1 -->
+      <class name="lambdaTestPlayground.TestScenario2">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario2@8458f04]" started-at="2024-12-28T18:45:56 IST" name="preCondition" finished-at="2024-12-28T18:46:18 IST" duration-ms="21309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[128.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario2()[pri:0, instance:lambdaTestPlayground.TestScenario2@8458f04]" started-at="2024-12-28T18:46:18 IST" name="scenario2" finished-at="2024-12-28T18:46:49 IST" duration-ms="30937" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to find the session info for particular sessionId 518474d59df3e8354262211db57cf074, maybe session has quit already or timed out.
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [518474d59df3e8354262211db57cf074, clickElement {id=f.85B48D02475076D840E008ED14F8A6BC.d.5F220FD05B01329373A41E8E661AE0B2.e.62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.85, chrome: {chromedriverVersion: 128.0.6613.18 (7d504c2c60ba..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on windows (518474d59df3e8354262211db57cf074)] -> link text: Drag & Drop Sliders]
+Session ID: 518474d59df3e8354262211db57cf074]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 518474d59df3e8354262211db57cf074, maybe session has quit already or timed out.
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [518474d59df3e8354262211db57cf074, clickElement {id=f.85B48D02475076D840E008ED14F8A6BC.d.5F220FD05B01329373A41E8E661AE0B2.e.62}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.85, chrome: {chromedriverVersion: 128.0.6613.18 (7d504c2c60ba..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on windows (518474d59df3e8354262211db57cf074)] -> link text: Drag & Drop Sliders]
+Session ID: 518474d59df3e8354262211db57cf074
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at lambdaTestPlayground.TestScenario2.scenario2(TestScenario2.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario2@8458f04]" started-at="2024-12-28T18:46:49 IST" name="postCondition" finished-at="2024-12-28T18:46:49 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario2 -->
+      <class name="lambdaTestPlayground.TestScenario3">
+        <test-method is-config="true" signature="preCondition(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestPlayground.TestScenario3@48075da3]" started-at="2024-12-28T18:46:49 IST" name="preCondition" finished-at="2024-12-28T18:48:23 IST" duration-ms="94283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[128.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="scenario3()[pri:0, instance:lambdaTestPlayground.TestScenario3@48075da3]" started-at="2024-12-28T18:48:23 IST" name="scenario3" finished-at="2024-12-28T18:48:28 IST" duration-ms="5218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:lambdaTestPlayground.TestScenario3@48075da3]" started-at="2024-12-28T18:48:28 IST" name="postCondition" finished-at="2024-12-28T18:48:28 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- lambdaTestPlayground.TestScenario3 -->
+    </test> <!-- Chrome -->
+  </suite> <!-- LambaTestSuite -->
+</testng-results>
